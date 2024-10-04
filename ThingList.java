@@ -1,39 +1,43 @@
-public class ThingList {
-
-        Node head;
+public class ThingList{
 
         private class Node {
                 Thing data;
                 Node  next;
+        
+
+                Node(Thing t){
+                        data = t;
+                        next = null;
+                }
         }
 
-        public void addThing(int row, int col){
+        private Node head;
 
-                Thing tA = new Thing();
-                tA.row = row;
-                tA.col = col;
-                Node nA = new Node();
-                nA.data = tA;
-                nA.next = L;
-                L       = nA;
+        public ThingList(){
+                head = null;
+        }
+        
 
+        public void addThing(Thing t){
+
+                Node newNode = new Node(t);
+                newNode.next = head;
+                head = newNode;
+                
         }
 
+        public void moveAll(){
 
-
-
-        public void moveAll(Thing L){
-
-                for( Node T = L; T != null; T = T.next ) {
-                        maybeTurn(T.data);
-                        step(T.data);
+                for( Node T = head; T != null; T = T.next ) {
+                        T.data.maybeTurn();
+                        T.data.step();
                 }
 
         }
 
         public void printAll(){
 
-                for( Node T = L; T != null; T = T.next )
+                for( Node T = head; T != null; T = T.next )
                         System.out.println(T.data.row + " " + T.data.col + " " + T.data.lab);
 
                 System.out.println("done");

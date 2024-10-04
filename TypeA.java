@@ -1,31 +1,20 @@
-public class TypeA extends Thing {
+import java.util.*;
 
-    public void maybeTurn(Thing t) {
+public class TypeA extends Thing {
+    private Random rand = new Random();
+
+    public TypeA(){
+        super( 45, 50, 'r');
+    }
+
+    public void maybeTurn() {
         int i = rand.nextInt(3);
-    
-        if (t.isTypeB) {
-                t.timeSinceLast++;
-    
-                if (t.timeSinceLast == 10) {
-                        t.timeSinceLast = 0;
-    
-                        if (i == 1) {
-                                rightTurn(t);
-                        }
-    
-                        if (i == 2) {
-                                leftTurn(t);
-                        }
-                }
-        } else   {
-                if (i == 1) {
-                        rightTurn(t);
-                }
-    
-                if (i == 2) {
-                        leftTurn(t);
-                }
+
+        if (i == 1){
+            rightTurn();
+        } else if (i == 2) {
+            leftTurn();
         }
-}
-        
+
+    }
 }
