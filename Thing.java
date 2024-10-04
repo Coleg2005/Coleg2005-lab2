@@ -2,10 +2,11 @@ import java.util.*;
 
 
 abstract class Thing{
-
         // dir: 0=North, 1=East, 2=South, 3=West.
         // timeSinceLast: this is only important for "TypeB" Things.
-        protected int  row, col, dir;
+        protected int  row;
+        protected int col;
+        protected int dir;
         protected char lab;
 
         public Thing(int row, int col, char lab) {
@@ -15,7 +16,7 @@ abstract class Thing{
                 this.dir = 0;
         }
         
-        public abstract void maybeTurn();
+        public abstract void maybeTurn(Random rand);
 
         public void step() {
                 final int[] dc = {

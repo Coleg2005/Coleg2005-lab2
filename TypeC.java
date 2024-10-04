@@ -1,7 +1,6 @@
 import java.util.*;
 
 public class TypeC extends Thing{
-        private Random rand = new Random();
 
         private int timeSinceLast = 0;
         private int spiral = 1;
@@ -10,7 +9,7 @@ public class TypeC extends Thing{
                 super(65, 50, 'g');
         }
 
-        public void maybeTurn() {    
+        public void maybeTurn(Random rand) {    
                
                 
 

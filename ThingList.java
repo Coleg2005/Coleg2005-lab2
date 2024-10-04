@@ -1,5 +1,6 @@
-public class ThingList{
+import java.util.*;
 
+public class ThingList{
         private class Node {
                 Thing data;
                 Node  next;
@@ -23,13 +24,13 @@ public class ThingList{
                 Node newNode = new Node(t);
                 newNode.next = head;
                 head = newNode;
-                
+
         }
 
-        public void moveAll(){
+        public void moveAll(Random rand){
 
                 for( Node T = head; T != null; T = T.next ) {
-                        T.data.maybeTurn();
+                        T.data.maybeTurn(rand);
                         T.data.step();
                 }
 

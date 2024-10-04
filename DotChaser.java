@@ -36,7 +36,7 @@ public class DotChaser {
       // (SEEMS LIKE A NICE PRINTALL() METHOD CALL WOULD WORK HERE)
       // (SEEMS LIKE A toString() METHOD IN THE CLASS WOULD ALSO BE NICE)
       list.printAll();
-      list.moveAll();
+      list.moveAll(rand);
       
       count++;
     }
