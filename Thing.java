@@ -2,8 +2,8 @@ import java.util.*;
 
 
 abstract class Thing{
-        // dir: 0=North, 1=East, 2=South, 3=West.
-        // timeSinceLast: this is only important for "TypeB" Things.
+
+        // Protected variables for all things
         protected int  row;
         protected int col;
         protected int dir;
@@ -16,8 +16,10 @@ abstract class Thing{
                 this.dir = 0;
         }
         
+        // Declared function here and defined fuction in appropriate classes
         public abstract void maybeTurn(Random rand);
 
+        // Movement occurs in all things so step, rightTurn & leftTurn in Thing class
         public void step() {
                 final int[] dc = {
                         0, 1, 0, -1

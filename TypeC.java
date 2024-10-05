@@ -5,14 +5,14 @@ public class TypeC extends Thing{
         private int timeSinceLast = 0;
         private int spiral = 1;
 
+        // Makes a thing typeC, all other parts of this thing are taken care of in Thing
         public TypeC(){
                 super(65, 50, 'g');
         }
 
+        // TypeC movement, each rotation takes more steps to turn.
         public void maybeTurn(Random rand) {    
                
-                
-
                 timeSinceLast++;
                 if(timeSinceLast == spiral){
                         timeSinceLast = 0;

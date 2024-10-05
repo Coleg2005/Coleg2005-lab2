@@ -1,0 +1,29 @@
+commit a48b76a2870159bbeda6d1532fc0ca74a4aee123
+Author: Coleg.2005 <cole.garrison@gwu.edu>
+Date:   Fri Oct 4 13:29:57 2024 -0400
+
+    All test cases passed, TypeC created, Should be done
+
+commit 8a9cf420226d8bc5be9022f567d8c2b59fd707cb
+Author: Coleg.2005 <cole.garrison@gwu.edu>
+Date:   Fri Oct 4 12:09:58 2024 -0400
+
+    TypeC written, test cases acting weird
+
+commit 05ced989650d07f193aee408b6c5195d4c6804ee
+Author: Coleg.2005 <cole.garrison@gwu.edu>
+Date:   Fri Oct 4 11:28:17 2024 -0400
+
+    I figured it out and simplified the code a lot as tasked, tester is still failing and need to write typeC
+
+commit 56620911970c3ca143ed401c421df3549c812fda
+Author: Coleg.2005 <cole.garrison@gwu.edu>
+Date:   Thu Oct 3 23:43:13 2024 -0400
+
+    not much done so far kinda confused
+
+commit d1333ec5cbc4df3d4c2852f4c1b6df7f1fd7cbbb
+Author: Cole Garrison <cole.garrison@gwu.edu>
+Date:   Wed Oct 2 22:21:21 2024 -0400
+
+    Add files via upload

@@ -3,10 +3,12 @@ import java.util.*;
 public class TypeB extends Thing {
     private int timeSinceLast = 0;
 
+    // Makes a thing typeB, all other parts of this thing are taken care of in Thing
     public TypeB(){
         super(55, 50, 'b');
     }
 
+    // Given function for typeB movement
     public void maybeTurn(Random rand) {
 
         timeSinceLast++;

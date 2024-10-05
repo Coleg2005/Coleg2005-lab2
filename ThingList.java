@@ -1,6 +1,8 @@
 import java.util.*;
 
 public class ThingList{
+
+        // Nodes for list
         private class Node {
                 Thing data;
                 Node  next;
@@ -12,13 +14,16 @@ public class ThingList{
                 }
         }
 
+        // Initializes head
         private Node head;
 
+        // Sets head for ThingList
         public ThingList(){
                 head = null;
         }
         
 
+        // Adds thing
         public void addThing(Thing t){
 
                 Node newNode = new Node(t);
@@ -27,6 +32,7 @@ public class ThingList{
 
         }
 
+        // Moves all things
         public void moveAll(Random rand){
 
                 for( Node T = head; T != null; T = T.next ) {
@@ -36,6 +42,7 @@ public class ThingList{
 
         }
 
+        // Prints all things
         public void printAll(){
 
                 for( Node T = head; T != null; T = T.next )
